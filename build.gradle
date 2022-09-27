@@ -1,6 +1,7 @@
 plugins {
     id 'groovy'
     id 'jacoco'
+    id "org.sonarqube" version "3.4.0.2513"
 }
 
 group 'lv.id.jc'
@@ -24,8 +25,8 @@ dependencies {
         transitive = false // this avoids affecting your version of Groovy/Spock
     }
     // Required for spock-reports
-    testImplementation 'org.slf4j:slf4j-api:1.7.32'
-    testRuntimeClasspath 'org.slf4j:slf4j-simple:1.7.32'
+    testImplementation 'org.slf4j:slf4j-api:2.0.1'
+    testRuntimeClasspath 'org.slf4j:slf4j-simple:2.0.0'
 }
 
 test {
@@ -43,5 +44,13 @@ jacocoTestReport {
         xml.required = true
         csv.required = false
         html.outputLocation = layout.buildDirectory.dir('jacocoHtml')
+    }
+}
+
+sonarqube {
+    properties {
+        property "sonar.projectKey", "rabestro_fund-balance-spock-example"
+        property "sonar.organization", "rabestro"
+        property "sonar.host.url", "https://sonarcloud.io"
     }
 }
