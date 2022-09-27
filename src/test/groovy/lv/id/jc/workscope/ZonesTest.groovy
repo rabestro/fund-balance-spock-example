@@ -1,12 +1,13 @@
 package lv.id.jc.workscope
 
+import spock.lang.Narrative
 import spock.lang.Specification
 import spock.lang.Subject
 import spock.lang.Title
 
 @Subject(Zones)
 @Title('Work zones')
-
+@Narrative('collection of zones')
 class ZonesTest extends Specification {
     def zone1 = Stub(WorkScope)
     def zone2 = Stub(WorkScope)
