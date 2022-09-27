@@ -34,8 +34,8 @@ public interface Surface {
 
     BigDecimal area();
 
-    default Surface subtract(Surface aperture) {
-        return () -> this.area().subtract(aperture.area());
+    default Surface minus(Surface other) {
+        return () -> this.area().subtract(other.area());
     }
 
     default Surface add(Surface aperture) {

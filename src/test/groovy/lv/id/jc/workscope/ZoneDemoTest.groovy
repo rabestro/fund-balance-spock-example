@@ -17,9 +17,9 @@ class ZoneDemoTest extends Specification {
     def "should correctly calculate the surface and cost of work"() {
 
         given: 'a task to create a blind area for the house'
-        def house = Surface.square(60)
+        def foundation = Surface.square(60)
         def houseWithBlindArea = Surface.square(60 + 2)
-        def blindAreaSurface = houseWithBlindArea.subtract(house)
+        def blindAreaSurface = houseWithBlindArea - foundation
 
         and: 'formula for calculating the rent for a concrete mixer'
         PriceFunction concreteMixer = { surface -> 10 + surface.area() * 2 }

@@ -39,7 +39,7 @@ class FundValuationAcceptanceTest extends Specification {
 
         and: 'one assigment with one zone'
         def surface = Surface.rectangle(width, height)
-        def zone = zoneFactory.create(type, surface.subtract(apertures))
+        def zone = zoneFactory.create(type, surface - apertures)
         def assigment = painter.assign(zone, VendorBonus.of(bonus))
 
         when: 'we create a fund valuation with this assignment'
@@ -196,7 +196,7 @@ class FundValuationAcceptanceTest extends Specification {
         def zone1 = zoneFactory.create("Floor", Surface.rectangle(5, 3))
         def zone2 = zoneFactory.create("Wall", Surface.square(10))
         def zone3 = zoneFactory.create("Ceiling", Surface.square(5))
-        def zone4 = zoneFactory.create("Wall", Surface.square(10).subtract(apertures))
+        def zone4 = zoneFactory.create("Wall", Surface.square(10) - apertures)
         def zone5 = zoneFactory.create("Wall", Surface.rectangle(1, 5))
         def zone6 = zoneFactory.create("Wall", Surface.rectangle(11, 5))
 

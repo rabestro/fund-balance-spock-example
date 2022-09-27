@@ -2,8 +2,11 @@ package lv.id.jc.workscope
 
 import spock.lang.Specification
 import spock.lang.Subject
+import spock.lang.Title
 
 @Subject(Zones)
+@Title('Work zones')
+
 class ZonesTest extends Specification {
     def zone1 = Stub(WorkScope)
     def zone2 = Stub(WorkScope)
@@ -24,5 +27,6 @@ class ZonesTest extends Specification {
         where:
         area1 | area2 | area3 | expectedArea
         12    | 30    | 22    | 64
+        1     | 1     | 1     | 3
     }
 }

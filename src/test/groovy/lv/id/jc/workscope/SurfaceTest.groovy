@@ -82,4 +82,21 @@ class SurfaceTest extends Specification {
         0     | 0
         -1    | -1
     }
+
+    def "should subtract one surfaces from other"() {
+        given:
+        def totalSurface = Spy(Surface) { area() >> totalArea }
+        def apertures = Spy(Surface) { area() >> aperturesArea }
+
+        when:
+        def result = totalSurface - apertures
+
+        then:
+        result.area() == expectedArea
+
+        where:
+        totalArea | aperturesArea | expectedArea
+        100       | 80            | 20
+        100       | 0             | 100
+    }
 }

@@ -21,7 +21,7 @@ public final class Zone implements WorkScope {
 
     @Override
     public BigDecimal area() {
-        return totalSurface.subtract(apertures).area();
+        return totalSurface.area().subtract(apertures.area());
     }
 
     @Override
