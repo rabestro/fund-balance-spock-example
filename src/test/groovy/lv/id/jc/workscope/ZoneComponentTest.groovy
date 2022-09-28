@@ -7,13 +7,15 @@ import spock.lang.Narrative
 import spock.lang.Specification
 import spock.lang.Subject
 import spock.lang.Title
+import spock.lang.Unroll
 
 @Title('Zone of work')
 @Subject([Zone, Surface, MaterialPrice, WorkPrice, ZonePrice])
 @Narrative('a component test that demonstrates the use of the Zone class')
 class ZoneComponentTest extends Specification {
 
-    def "should calculate all expenses per zone for #durationOfWork"() {
+    @Unroll('should calculate all expenses per zone for #durationOfWork')
+    def 'should calculate all expenses per zone'() {
 
         given: 'surface for painting'
         def totalSurface = Surface.square(squareSide)
