@@ -24,32 +24,31 @@ class FundValuationAcceptanceTest extends Specification {
 
     def "should calculate zero balance when no assignments"() {
 
-        given: 'no assignments'
+        when: 'we have no assignments'
         def fundValuation = FundValuation.of()
 
-        expect: 'zero balance'
+        then: 'we get zero fund balance'
         fundValuation.fundBalance() == 0
     }
 
-    @Unroll('should calculate balance when one worker with #comment')
+    @Unroll('should calculate balance when one senior worker with #comment')
     def "should calculate balance when one senior worker"() {
 
         given: 'one senior painter'
         def painter = new SeniorWorker(Payment.of(rate), Performance.of(amountPerDay))
 
-        and: 'one assigment with one zone'
+        and: 'one zone with a rectangle surface'
         def surface = Surface.rectangle(width, height)
         def zone = zoneFactory.create(type, surface - apertures)
+
+        and: 'one assignment with one zone for that painter'
         def assigment = painter.assign(zone, VendorBonus.of(bonus))
 
         when: 'we create a fund valuation with this assignment'
         def fundValuation = FundValuation.of(assigment)
 
-        and: 'calculate balance'
-        def balance = fundValuation.fundBalance()
-
-        then: 'we get expected result'
-        balance == expected
+        then: 'we can accurate calculate fund balance'
+        fundValuation.fundBalance() == expected
 
         where: 'surface sides, zone type, vendor bonus and worker characteristics'
         width | height | type      | apertures
