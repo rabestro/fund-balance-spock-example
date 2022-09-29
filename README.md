@@ -2,5 +2,6 @@
 
 # Spock Framework examples
 
-This is a project to showcase specification framework. 
-Automatically generated specifications you can check at https://rabestro.github.io/fund-balance-spock-example/spock-reports/
+This is a project to showcase Spock specification framework. 
+
+Automatically generated specifications you can check at https://rabestro.github.io/fund-balance-spock-example/
