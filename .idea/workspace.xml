@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9aeef96-272e-4d5c-9dab-1703aea4ca8f" name="Changes" comment="Update README.md">
+    <list default="true" id="c9aeef96-272e-4d5c-9dab-1703aea4ca8f" name="Changes" comment="Update FundValuationAcceptanceTest">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/spock.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/spock.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/groovy/lv/id/jc/FundValuationAcceptanceTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/lv/id/jc/FundValuationAcceptanceTest.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/groovy/lv/id/jc/workcost/WorkPriceTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/lv/id/jc/workcost/WorkPriceTest.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/SpockConfig.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/SpockConfig.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,7 +237,7 @@
       <workItem from="1664370973596" duration="4174000" />
       <workItem from="1664389252896" duration="904000" />
       <workItem from="1664445420016" duration="1548000" />
-      <workItem from="1664525834581" duration="2393000" />
+      <workItem from="1664525834581" duration="4966000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1664216363685</created>
@@ -307,7 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664445652494</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Update FundValuationAcceptanceTest">
+      <created>1664530916375</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1664530916375</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -332,8 +341,8 @@
     <MESSAGE value="Delete Main.java" />
     <MESSAGE value="Update build.gradle" />
     <MESSAGE value="Update spock.yml" />
-    <MESSAGE value="Update FundValuationAcceptanceTest" />
     <MESSAGE value="Update README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update README.md" />
+    <MESSAGE value="Update FundValuationAcceptanceTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update FundValuationAcceptanceTest" />
   </component>
 </project>

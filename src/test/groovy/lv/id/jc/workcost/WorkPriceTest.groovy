@@ -1,15 +1,14 @@
 package lv.id.jc.workcost
 
-
 import lv.id.jc.workscope.Surface
-import spock.lang.Narrative
-import spock.lang.Specification
-import spock.lang.Subject
-import spock.lang.Title
+import spock.lang.*
 
+@Issue('10')
+@Title('Project Customer calculates the price of the work')
+@Narrative('''As the customer of the project 
+I want to calculate the price of the work for the surface
+So that I be able to estimate the balance of funds''')
 @Subject(WorkPrice)
-@Title('Price of work')
-@Narrative('the function of work price for the surface')
 class WorkPriceTest extends Specification {
 
     def "should calculate the price of work for the surface"() {
