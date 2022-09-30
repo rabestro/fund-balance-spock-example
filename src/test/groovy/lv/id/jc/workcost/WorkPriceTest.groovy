@@ -7,7 +7,7 @@ import spock.lang.*
 @Title('Project Customer calculates the price of the work')
 @Narrative('''As the customer of the project 
 I want to calculate the price of the work for the surface
-So that I be able to estimate the balance of funds''')
+So that I be able to calculate the total cost of processing the zone''')
 @Subject(WorkPrice)
 class WorkPriceTest extends Specification {
 

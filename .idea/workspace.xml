@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9aeef96-272e-4d5c-9dab-1703aea4ca8f" name="Changes" comment="Update FundValuationAcceptanceTest">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/spock.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/spock.yml" afterDir="false" />
+    <list default="true" id="c9aeef96-272e-4d5c-9dab-1703aea4ca8f" name="Changes" comment="Update WorkPriceTest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/groovy/lv/id/jc/workcost/MaterialPriceTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/lv/id/jc/workcost/MaterialPriceTest.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/groovy/lv/id/jc/workcost/WorkPriceTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/lv/id/jc/workcost/WorkPriceTest.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/SpockConfig.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/SpockConfig.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,7 +236,7 @@
       <workItem from="1664370973596" duration="4174000" />
       <workItem from="1664389252896" duration="904000" />
       <workItem from="1664445420016" duration="1548000" />
-      <workItem from="1664525834581" duration="4966000" />
+      <workItem from="1664525834581" duration="6154000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1664216363685</created>
@@ -316,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664530916375</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Update WorkPriceTest">
+      <created>1664533566375</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1664533566375</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,6 +349,7 @@
     <MESSAGE value="Update spock.yml" />
     <MESSAGE value="Update README.md" />
     <MESSAGE value="Update FundValuationAcceptanceTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update FundValuationAcceptanceTest" />
+    <MESSAGE value="Update WorkPriceTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update WorkPriceTest" />
   </component>
 </project>
