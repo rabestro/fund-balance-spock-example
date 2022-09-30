@@ -8,12 +8,15 @@ import spock.lang.Specification
 import spock.lang.Subject
 import spock.lang.Title
 
+
+@Title('Project Customer calculates the price of the material')
+@Narrative('''
+As the customer of the project 
+I want to calculate the price of the material for the surface
+So that I be able to calculate the total cost of processing the zone
+''')
 @Issue('12')
 @Subject(MaterialPrice)
-@Title('Project Customer calculates the price of the material')
-@Narrative('''As the customer of the project 
-I want to calculate the price of the material for the surface
-So that I be able to calculate the total cost of processing the zone''')
 class MaterialPriceTest extends Specification {
     def surface = Stub(Surface)
 

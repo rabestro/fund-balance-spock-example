@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9aeef96-272e-4d5c-9dab-1703aea4ca8f" name="Changes" comment="Update WorkPriceTest">
+    <list default="true" id="c9aeef96-272e-4d5c-9dab-1703aea4ca8f" name="Changes" comment="Update MaterialPriceTest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/groovy/lv/id/jc/workcost/MaterialPriceTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/lv/id/jc/workcost/MaterialPriceTest.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/groovy/lv/id/jc/workcost/WorkPriceTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/lv/id/jc/workcost/WorkPriceTest.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/groovy/lv/id/jc/workcost/ZonePriceComponentTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/lv/id/jc/workcost/ZonePriceComponentTest.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/groovy/lv/id/jc/workcost/ZonePriceTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/lv/id/jc/workcost/ZonePriceTest.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +100,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Tests in 'fund-balance.test'">
+  <component name="RunManager" selected="Gradle.ZonePriceComponentTest">
     <configuration name="FundValuationAcceptanceTest.should calculate balance when one senior worker with #comment" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -189,7 +191,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ZonesTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ZonePriceComponentTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -202,7 +204,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;lv.id.jc.workscope.ZonesTest&quot;" />
+            <option value="&quot;lv.id.jc.workcost.ZonePriceComponentTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -214,11 +216,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ZonePriceComponentTest" />
         <item itemvalue="Gradle.Tests in 'fund-balance.test'" />
         <item itemvalue="Gradle.FundValuationAcceptanceTest.should calculate balance when one senior worker with #comment" />
         <item itemvalue="Gradle.FundValuationAcceptanceTest.should calculate balance when one senior worker" />
         <item itemvalue="Gradle.ZoneComponentTest" />
-        <item itemvalue="Gradle.ZonesTest" />
       </list>
     </recent_temporary>
   </component>
@@ -236,7 +238,8 @@
       <workItem from="1664370973596" duration="4174000" />
       <workItem from="1664389252896" duration="904000" />
       <workItem from="1664445420016" duration="1548000" />
-      <workItem from="1664525834581" duration="6154000" />
+      <workItem from="1664525834581" duration="6829000" />
+      <workItem from="1664548154584" duration="845000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1664216363685</created>
@@ -322,7 +325,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664533566375</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Update MaterialPriceTest">
+      <created>1664535883153</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1664535883153</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,6 +360,7 @@
     <MESSAGE value="Update README.md" />
     <MESSAGE value="Update FundValuationAcceptanceTest" />
     <MESSAGE value="Update WorkPriceTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update WorkPriceTest" />
+    <MESSAGE value="Update MaterialPriceTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update MaterialPriceTest" />
   </component>
 </project>
