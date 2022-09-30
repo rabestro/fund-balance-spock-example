@@ -1,19 +1,21 @@
 package lv.id.jc.workcost
 
 import lv.id.jc.workscope.Surface
-import spock.lang.Narrative
-import spock.lang.Specification
-import spock.lang.Subject
-import spock.lang.Title
+import spock.lang.*
 
 
+@Title('Project Customer calculates the price of the zone')
+@Narrative('''
+As the customer of the project 
+I want to calculate all costs per zone
+So that I be able to calculate the price of processing the zone
+''')
+@Issue('13')
 @Subject(ZonePrice)
-@Title('Zone price function')
-@Narrative('the price of the zone is obtained by adding up all the costs')
 class ZonePriceTest extends Specification {
     def surface = Stub Surface
 
-    def "should return zero if there is no Zona processing cost"() {
+    def "should return zero if there is no any processing cost"() {
 
         given: 'we do not have any costs associated with the processing of the zone'
         def zonePrice = ZonePrice.of()

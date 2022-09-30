@@ -1,15 +1,16 @@
 package lv.id.jc.workcost
 
-
 import lv.id.jc.workscope.Surface
-import spock.lang.Narrative
-import spock.lang.Specification
-import spock.lang.Subject
-import spock.lang.Title
+import spock.lang.*
 
-@Title('Zone Price')
+@Title('Project Customer calculates the price of the zone using the cost of materials and work')
+@Narrative('''
+As the customer of the project 
+I want to calculate the price of the zone using the cost of materials and work
+So that I be able to calculate the total cost of processing the zone
+''')
+@Issue('13')
 @Subject([ZonePrice, MaterialPrice, WorkPrice])
-@Narrative('Component test for the price of the zone, taking into account the costs of materials and labor')
 class ZonePriceComponentTest extends Specification {
 
     def "should calculate the cost of work and materials for the zone"() {
