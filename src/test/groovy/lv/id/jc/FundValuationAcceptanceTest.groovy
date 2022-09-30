@@ -9,9 +9,12 @@ import lv.id.jc.workscope.ZoneFactory
 import lv.id.jc.workscope.Zones
 import spock.lang.*
 
-@Title("Fund valuation")
+@Issue('8')
 @Subject(FundValuation)
-@Narrative("Acceptance test for fund valuation")
+@Title('Project Customer evaluates the balance of funds')
+@Narrative('''As the customer of the project 
+I want to estimate the balance of available funds
+So that I be able to adjust the estimate if necessary''')
 class FundValuationAcceptanceTest extends Specification {
 
     def zoneFactory = new ZoneFactory()
@@ -31,17 +34,17 @@ class FundValuationAcceptanceTest extends Specification {
         fundValuation.fundBalance() == 0
     }
 
-    @Unroll('should calculate balance when one senior worker with #comment')
+    @Unroll('should calculate balance when one senior worker with #assignment')
     def "should calculate balance when one senior worker"() {
 
-        given: 'one senior painter'
+        given: 'one senior worker'
         def painter = new SeniorWorker(Payment.of(rate), Performance.of(amountPerDay))
 
-        and: 'one zone with a rectangle surface'
+        and: 'one zone with a rectangle surface and some apertures'
         def surface = Surface.rectangle(width, height)
         def zone = zoneFactory.create(type, surface - apertures)
 
-        and: 'one assignment with one zone for that painter'
+        and: 'one assignment with one zone for that worker'
         def assigment = painter.assign(zone, VendorBonus.of(bonus))
 
         when: 'we create a fund valuation with this assignment'
@@ -59,7 +62,7 @@ class FundValuationAcceptanceTest extends Specification {
         5     | 5      | "Ceiling" | Surface.zero()
         3     | 5      | "Ceiling" | Surface.zero()
         __
-        bonus | rate | amountPerDay || expected | comment
+        bonus | rate | amountPerDay || expected | assignment
         50    | 250  | 30           || 250      | 'one wall assignment'
         100   | 250  | 30           || 175      | 'one wall assignment with big vendor bonus'
         50    | 250  | 30           || 100      | 'one big wall with aperture assignment'
