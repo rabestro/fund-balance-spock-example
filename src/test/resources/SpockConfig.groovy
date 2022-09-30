@@ -1,6 +1,6 @@
 report {
     issueNamePrefix 'Issue #'
-    issueUrlPrefix 'https://github.com/rabestro/fund-balance-spock-example/issues'
+    issueUrlPrefix 'https://github.com/rabestro/fund-balance-spock-example/issues/'
 }
 
 spockReports {
