@@ -12,15 +12,15 @@ So that I be able to calculate the total cost of processing the zone
 ''')
 @Issue('10')
 @Subject(WorkPrice)
-class WorkPriceTest extends Specification {
+class WorkPriceTest extends PriceSpecification {
 
     def "should calculate the price of work for the surface"() {
 
-        given: 'formula for calculating the cost of work based on the cost of processing a unit area'
-        def priceFunction = WorkPrice.of(workPrice)
+        given: 'surface for processing with a given area'
+        surface.area() >> surfaceArea
 
-        when: 'we have a surface to be treated'
-        def surface = Stub(Surface) { area() >> surfaceArea }
+        when: 'we create a function for calculating the cost of work'
+        def priceFunction = WorkPrice.of(workPrice)
 
         then: 'we get accurately calculated the cost of the work'
         priceFunction.apply(surface) == expectedPrice

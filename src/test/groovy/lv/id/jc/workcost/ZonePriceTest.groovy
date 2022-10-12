@@ -12,16 +12,15 @@ So that I be able to calculate the price of processing the zone
 ''')
 @Issue('13')
 @Subject(ZonePrice)
-class ZonePriceTest extends Specification {
-    def surface = Stub Surface
+class ZonePriceTest extends PriceSpecification {
 
     def "should return zero if there is no any processing cost"() {
 
-        given: 'we do not have any costs associated with the processing of the zone'
-        def zonePrice = ZonePrice.of()
-
-        when: 'we have a surface to be treated'
+        given: 'surface for processing with a given area'
         surface.area() >> zoneArea
+
+        when: 'we do not have any costs associated with the processing of the zone'
+        def zonePrice = ZonePrice.of()
 
         then: 'we always get zero cost of work'
         zonePrice.apply(surface) == 0
@@ -32,7 +31,7 @@ class ZonePriceTest extends Specification {
 
     def "should calculate the costs for the zone with one item of expenditure"() {
 
-        given: 'a surface to be treated'
+        given: 'surface for processing with a given area'
         surface.area() >> zoneArea
 
         and: 'one item of expenses for processing the zone'
@@ -56,7 +55,7 @@ class ZonePriceTest extends Specification {
 
     def "should calculate the costs for the zone with several items of expenditure"() {
 
-        given: 'a surface to be treated'
+        given: 'surface for processing with a given area'
         surface.area() >> zoneArea
 
         and: 'several items of expenses for processing the zone'

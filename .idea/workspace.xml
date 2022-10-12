@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9aeef96-272e-4d5c-9dab-1703aea4ca8f" name="Changes" comment="Update MaterialPriceTest">
+    <list default="true" id="c9aeef96-272e-4d5c-9dab-1703aea4ca8f" name="Changes" comment="Issue #13">
+      <change afterPath="$PROJECT_DIR$/src/test/groovy/lv/id/jc/workcost/PriceSpecification.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/groovy/lv/id/jc/workcost/MaterialPriceTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/lv/id/jc/workcost/MaterialPriceTest.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/groovy/lv/id/jc/workcost/WorkPriceTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/lv/id/jc/workcost/WorkPriceTest.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/groovy/lv/id/jc/workcost/ZonePriceComponentTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/lv/id/jc/workcost/ZonePriceComponentTest.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/groovy/lv/id/jc/workcost/ZonePriceTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/lv/id/jc/workcost/ZonePriceTest.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/groovy/lv/id/jc/workscope/SideTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/lv/id/jc/workscope/SideTest.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +89,8 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -100,8 +103,8 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ZonePriceComponentTest">
-    <configuration name="FundValuationAcceptanceTest.should calculate balance when one senior worker with #comment" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.Tests in 'fund-balance.test'">
+    <configuration name="MaterialPriceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -114,7 +117,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;lv.id.jc.FundValuationAcceptanceTest.should calculate balance when one senior worker with #comment&quot;" />
+            <option value="&quot;lv.id.jc.workcost.MaterialPriceTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -124,7 +127,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="FundValuationAcceptanceTest.should calculate balance when one senior worker" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SideTest.should throw an exception for a negative or zero number" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -137,7 +140,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;lv.id.jc.FundValuationAcceptanceTest.should calculate balance when one senior worker&quot;" />
+            <option value="&quot;lv.id.jc.workscope.SideTest.should throw an exception for a negative or zero number&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -168,7 +171,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ZoneComponentTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="WorkPriceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -181,7 +184,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;lv.id.jc.workscope.ZoneComponentTest&quot;" />
+            <option value="&quot;lv.id.jc.workcost.WorkPriceTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -216,11 +219,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ZonePriceComponentTest" />
         <item itemvalue="Gradle.Tests in 'fund-balance.test'" />
-        <item itemvalue="Gradle.FundValuationAcceptanceTest.should calculate balance when one senior worker with #comment" />
-        <item itemvalue="Gradle.FundValuationAcceptanceTest.should calculate balance when one senior worker" />
-        <item itemvalue="Gradle.ZoneComponentTest" />
+        <item itemvalue="Gradle.MaterialPriceTest" />
+        <item itemvalue="Gradle.WorkPriceTest" />
+        <item itemvalue="Gradle.SideTest.should throw an exception for a negative or zero number" />
+        <item itemvalue="Gradle.ZonePriceComponentTest" />
       </list>
     </recent_temporary>
   </component>
@@ -239,7 +242,9 @@
       <workItem from="1664389252896" duration="904000" />
       <workItem from="1664445420016" duration="1548000" />
       <workItem from="1664525834581" duration="6829000" />
-      <workItem from="1664548154584" duration="845000" />
+      <workItem from="1664548154584" duration="1119000" />
+      <workItem from="1665494795107" duration="509000" />
+      <workItem from="1665567752813" duration="813000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1664216363685</created>
@@ -332,7 +337,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664535883153</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Issue #13">
+      <created>1664549021137</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1664549021137</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,6 +373,7 @@
     <MESSAGE value="Update FundValuationAcceptanceTest" />
     <MESSAGE value="Update WorkPriceTest" />
     <MESSAGE value="Update MaterialPriceTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update MaterialPriceTest" />
+    <MESSAGE value="Issue #13" />
+    <option name="LAST_COMMIT_MESSAGE" value="Issue #13" />
   </component>
 </project>

@@ -17,16 +17,15 @@ So that I be able to calculate the total cost of processing the zone
 ''')
 @Issue('12')
 @Subject(MaterialPrice)
-class MaterialPriceTest extends Specification {
-    def surface = Stub(Surface)
+class MaterialPriceTest extends PriceSpecification {
 
     def "should calculate the price of materials with default material area factor"() {
 
-        given: 'the material price function with default area factor'
-        def priceFunction = MaterialPrice.norm()
-
-        when: 'we have a surface to be treated'
+        given: 'surface for processing with a given area'
         surface.area() >> surfaceArea
+
+        when: 'we create a function for calculating the cost of material with default area factor'
+        def priceFunction = MaterialPrice.norm()
 
         then: 'we get accurately calculated the cost of the material for the surface'
         priceFunction.apply(surface) == expectedPrice
@@ -40,11 +39,11 @@ class MaterialPriceTest extends Specification {
 
     def "should calculate the price of materials with certain material area factor"() {
 
-        given: 'the material price function with certain material area factor'
-        def priceFunction = MaterialPrice.of(materialAreaFactor)
-
-        when: 'we have a surface to be treated'
+        given: 'surface for processing with a given area'
         surface.area() >> surfaceArea
+
+        when: 'we create a function with certain material area factor'
+        def priceFunction = MaterialPrice.of(materialAreaFactor)
 
         then: 'we get accurately calculated the cost of the material for the surface'
         priceFunction.apply(surface) == expectedPrice

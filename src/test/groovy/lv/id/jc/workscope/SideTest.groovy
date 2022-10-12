@@ -29,10 +29,10 @@ class SideTest extends Specification {
         value << [1, 0.001, Math.nextUp(0.0), 38, Double.MAX_VALUE]
     }
 
-    def "should throw an exception for a negative or zero number"() {
+    def 'should throw an exception for a negative or zero number'() {
 
         when: 'we are trying to create a side using a negative number or zero'
-        def side = Side.of(value as double)
+        def side = Side.of(value)
 
         then: 'we cannot create this object and an exception is thrown'
         def message = thrown IllegalArgumentException
@@ -41,7 +41,7 @@ class SideTest extends Specification {
         message =~ "must be a positive"
 
         where:
-        value << [-7, 0, -0.001, Math.nextDown(0.0)] //To-Do: test fails for Double.MIN_VALUE
+        value << [0.0, Math.nextDown(0.0),  -0.001, -97]
     }
 
 }
