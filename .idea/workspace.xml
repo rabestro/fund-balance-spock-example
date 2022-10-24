@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9aeef96-272e-4d5c-9dab-1703aea4ca8f" name="Changes" comment="Issue #13">
-      <change afterPath="$PROJECT_DIR$/src/test/groovy/lv/id/jc/workcost/PriceSpecification.groovy" afterDir="false" />
+    <list default="true" id="c9aeef96-272e-4d5c-9dab-1703aea4ca8f" name="Changes" comment="Update tests for price functions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/groovy/lv/id/jc/workcost/MaterialPriceTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/lv/id/jc/workcost/MaterialPriceTest.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/groovy/lv/id/jc/workcost/WorkPriceTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/lv/id/jc/workcost/WorkPriceTest.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/groovy/lv/id/jc/workcost/ZonePriceComponentTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/lv/id/jc/workcost/ZonePriceComponentTest.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/groovy/lv/id/jc/workcost/ZonePriceTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/lv/id/jc/workcost/ZonePriceTest.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/groovy/lv/id/jc/workscope/SideTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/lv/id/jc/workscope/SideTest.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -245,6 +240,7 @@
       <workItem from="1664548154584" duration="1119000" />
       <workItem from="1665494795107" duration="509000" />
       <workItem from="1665567752813" duration="813000" />
+      <workItem from="1666633218072" duration="31000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1664216363685</created>
