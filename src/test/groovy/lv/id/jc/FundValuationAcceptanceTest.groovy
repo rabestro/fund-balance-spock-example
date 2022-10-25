@@ -57,7 +57,7 @@ class FundValuationAcceptanceTest extends Specification {
         width | height | type      | apertures
         5     | 5      | "Wall"    | Surface.zero()
         5     | 5      | "Wall"    | Surface.zero()
-        10    | 10     | "Wall"    | Surface.rectangle(9, 5).add(Surface.rectangle(9, 4))
+        10    | 10     | "Wall"    | Surface.rectangle(9, 5) + Surface.rectangle(9, 4)
         5     | 5      | "Floor"   | Surface.zero()
         5     | 5      | "Ceiling" | Surface.zero()
         3     | 5      | "Ceiling" | Surface.zero()
@@ -192,7 +192,7 @@ class FundValuationAcceptanceTest extends Specification {
         def owen = new SeniorWorker(Payment.of(280), Performance.of(60))
 
         and:
-        def apertures = Surface.rectangle(9, 5).add(Surface.rectangle(9, 4))
+        def apertures = Surface.rectangle(9, 5).plus(Surface.rectangle(9, 4))
 
         and:
         def zone1 = zoneFactory.create("Floor", Surface.rectangle(5, 3))

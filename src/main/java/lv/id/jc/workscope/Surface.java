@@ -38,7 +38,7 @@ public interface Surface {
         return () -> this.area().subtract(other.area());
     }
 
-    default Surface add(Surface aperture) {
+    default Surface plus(Surface aperture) {
         return () -> this.area().add(aperture.area());
     }
 }
